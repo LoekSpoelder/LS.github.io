@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Loek Spoelder</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="software.html">Software</a>
+      <a href="contact.html">Contact</a>
+      <a href="school.html">Mijn school</a>
+    </div>
+
+    <div id="main">
+      <img id="logo" src="LSlogo.png" alt="Logo van de site">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <h1>Hobbies</h1>
+      <h2>Gamen</h2>
+      <table>
+        <tr><th>Games die ik speel of heb:</th></tr>
+        <tr><td>Roblox</td></tr>
+        <tr><td>Among us</td></tr>
+        <tr><td>Minecraft</td></tr>
+        <tr><td>GTA V</td></tr>
+        <tr><td>Hitman</td></tr>
+        <tr><td>Human fall flat</td></tr>
+        <tr><td>Just cause 3</td></tr>
+        <tr><td>Portal</td></tr>
+        <tr><td>portal 2</td></tr>
+        <tr><td>Watch dogs</td></tr>
+        <tr><td>Watch dogs 2</td></tr>
+        <tr><td>The escapist 2</td></tr>
+        <tr><td>Team fortress 2</td></tr>
+        <tr><td>Don't starve together</td></tr>
+        <tr><td>En veel meer.</td></tr>
+      </table>
+      <p>Ik vind gamen relaxend in een soort van manier, het geeft mij een rust waar ik niet hoef te denken aan andere dingen. Ik kan gewoon concentreren en mijn eigen ding doen.</p>
+      <h2>Niks doen</h2>
+      <p>Ik ben bijna altijd moe.</p>
+    </div>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+    </script>
+  </body>
+</html>

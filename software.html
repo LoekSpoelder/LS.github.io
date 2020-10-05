@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Loek Spoelder</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="software.html">Software</a>
+      <a href="contact.html">Contact</a>
+      <a href="school.html">Mijn school</a>
+    </div>
+
+    <div id="main">
+      <img id="logo" src="LSlogo.png" alt="Logo van de site">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <h1>Software</h1>
+      <p>Dit is een lijst van software die ik gebruik of heb gebruikt.</p>
+      <table>
+        <tr><td>Atom</td></tr>
+        <tr><td>Audacity</td></tr>
+        <tr><td>Blander</td></tr>
+        <tr><td>FireAlpaca</td></tr>
+        <tr><td>Paint.net</td></tr>
+      </table>
+      <p>
+        Atom is gebruikt om deze site te coderen.<br>
+        Audacity is een audio recording programma voor je microfoon, je kan er ook audio mee editen.<br>
+        Blender is een 3D modelleer programma waar je coolen modellen mee kan maken.<br>
+        FireAlpaca is een programma waar je mee kan tekenen.<br>
+        En Paint.net is een teken programma en foto editor.
+      </p>
+    </div>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+    </script>
+  </body>
+</html>
